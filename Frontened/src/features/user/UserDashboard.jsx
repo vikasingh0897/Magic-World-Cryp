@@ -31,7 +31,7 @@ const UserDashboard = () => {
         if (profileRes.data.success) setUserData(profileRes.data.user);
         if (transRes.data.success) setTransactions(transRes.data.data);
       } catch (error) {
-        console.error('System synchronization error:', error);
+        console.error(error);
       } finally {
         setLoading(false);
       }
@@ -49,7 +49,7 @@ const UserDashboard = () => {
   }
 
   return (
-    <div className="bg-background text-on-surface p-4 md:py-12 flex flex-col items-center min-h-fit md:min-h-[70vh] justify-start md:justify-center transition-all duration-300">
+    <div className="bg-background text-on-surface p-4 pt-24 md:pt-32 md:pb-12 flex flex-col items-center min-h-screen justify-start transition-all duration-300">
       <div className="max-w-2xl w-full space-y-6">
         <header className="flex flex-col md:flex-row md:justify-between md:items-center bg-surface-container-low/50 p-8 rounded-[2.5rem] border border-outline-variant/10 shadow-xl backdrop-blur-sm">
           <div className="space-y-1">

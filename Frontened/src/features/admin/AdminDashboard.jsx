@@ -36,7 +36,7 @@ const AdminDashboard = () => {
           recentSignups: data.recentSignups || 0,
         });
       } catch (error) {
-        console.error('Data acquisition error:', error);
+        console.error(error);
       } finally {
         setLoading(false);
       }
@@ -53,7 +53,7 @@ const AdminDashboard = () => {
   }
 
   return (
-    <div className="bg-background text-on-surface p-4 md:py-12 flex flex-col items-center min-h-fit md:min-h-[70vh]">
+    <div className="bg-background text-on-surface p-4 pt-24 md:pt-32 pb-12 flex flex-col items-center min-h-screen justify-start">
       <div className="max-w-4xl w-full space-y-6">
         <header className="flex flex-col md:flex-row md:justify-between md:items-end bg-surface-container-low/50 p-6 rounded-[2rem] border border-outline-variant/10 shadow-sm">
           <div>
