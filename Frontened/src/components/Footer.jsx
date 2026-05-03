@@ -59,29 +59,6 @@ const Footer = () => {
             </div>
           </div>
 
-          <a
-            href="https://linkedin.com/in/vikasingh0897"
-            target="_blank"
-            rel="noreferrer"
-            className="group flex items-center gap-4 p-1.5 pr-6 bg-gradient-to-r from-[#131b2e] to-transparent border border-[#424656]/30 rounded-full w-full md:w-auto transition-all hover:border-[#afc6ff] hover:shadow-[0_0_20px_rgba(175,198,255,0.05)]"
-          >
-            <div className="relative">
-              <img
-                src={`https://github.com/${githubUsername}.png`}
-                alt="Architect"
-                className="h-10 w-10 rounded-full border-2 border-[#4edea3]/30 object-cover group-hover:border-[#afc6ff] transition-colors"
-              />
-              <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-[#4edea3] border-2 border-[#060e20] rounded-full" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-[8px] text-[#8c90a1] uppercase font-bold tracking-widest">
-                Architect
-              </span>
-              <h4 className="text-[13px] font-bold text-[#dae2fd]">
-                Vikas Singh
-              </h4>
-            </div>
-          </a>
         </div>
 
         <div className="pt-8 border-t border-[#424656]/20">
